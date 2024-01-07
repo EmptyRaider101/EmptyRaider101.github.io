@@ -1,174 +1,1 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-<meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Wil's Portfolio</title>
-<link rel="shortcut icon" href="Logo.ico"/>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
-
-</head>
-<style>
-* {font-family: Varela Round;}
-
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
-
-.audio-player {
-    width: 20rem;
-    margin: 1.5rem;
-}
-
-.controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.progress {
-    height: 1rem;
-    background-color: white;
-    margin-top: 1rem;
-}
-
-.progress-bar {
-    width: 0;
-    height: 100%;
-    background-color: #8b0000;
-}
-
-#current-time, #total-time {
-    margin-top: 0rem;
-}
-
-
-</style>
-<body>
-
-<nav class="navbar navbar-expand-lg py-3 navbar-dark" style="background-color: black;">
-
-    <div class="container-fluid">
-
-        <a href="#" class="navbar-brand p-0 px-5 mx-4" style="border: 2px solid white!important; font-size: 2rem !important; font-family: 'Kanit', sans-serif;">Wil-Code</a>
-
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-
-            <div class="navbar-nav ms-auto">
-
-                <a href="home.php" class="nav-item nav-link mx-5" style="color: gray !important;">Home</a>
-
-                <a href="samples.php" class="nav-item nav-link active mx-5" style="color: gray !important;">Samples</a>
-
-                <a href="studio.php" class="nav-item nav-link mx-5" style="color: gray !important;">Studio</a>
-
-               <a href="contact.php" class="nav-item nav-link mx-5" style="color: #8b0000 !important;">Contact</a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</nav>
-<!-- <div style="height: 64.5vh; background-color: blue; background-image: url('Banner.png');"></div> -->
-
-<h1 class="d-flex justify-content-center mt-5" style="font-family: 'Great Vibes', cursive; font-size: 19vmin; margin-bottom: 0rem;">Contact</h1>
-<div style="height: 64.5vh; background-color: #8b0000; padding: 2rem;">
-<div class="container text-center d-flex justify-content-center mb-5"><a href="https://x.com/wil_code_va?s=21" target="_blank"><svg style="color: black; margin: 0.5rem; background-color: white; padding: 0.3rem; border-radius: 50%;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
-</svg></a><a href="https://youtube.com/@Wil-CodeVA" target="_blank"><svg style="color: black; margin: 0.5rem; background-color: white; padding: 0.3rem; border-radius: 50%;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z"/>
-</svg></a><a href="https://discord.gg/wTxjATqM32" target="_blank"><svg style="color: black; margin: 0.5rem; background-color: white; padding: 0.3rem; border-radius: 50%;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
-  <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
-</svg></a><a href="https://www.tiktok.com/@wil.code?_t=8ihrj1fVV1i&_r=1" target="_blank"><svg style="color: black; margin: 0.5rem; background-color: white; padding: 0.3rem; border-radius: 50%;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-</svg></a><a href="https://x.com/codebugst?s=21" target="_blank"><svg style="color: black; margin: 0.5rem; background-color: white; padding: 0.3rem; border-radius: 50%;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
-</svg></a></div>
-<div class="d-flex justify-content-center">
-<form class="" action="mail.php" method="post">
-  <div style="display: flex;">
-    <div style="width: 50%; margin: 0.5rem;">
-      <input style="border-radius: 0rem;" type="text" class="form-control" name="name" placeholder="Name" required>
-    </div>
-    <div style="width: 50%; margin: 0.5rem">
-      <input style="border-radius: 0rem;" type="email" class="form-control" name="email" placeholder="Email" required>
-    </div>
-	</div>
-	<div style="display: flex;">
-  	<div style="width: 100%; margin: 0.5rem;">
-      <input style="border-radius: 0rem;" type="number" class="form-control" name="number" placeholder="Number" required>
-    </div>
-	</div>
-	<div style="display: flex;">
-  	<div style="width: 100%; margin: 0.5rem; margin-bottom: 0rem; vertical-align: text-top !important;">
-	  <textarea  style="border-radius: 0rem; height: 10rem;" type="text" class="form-control" name="message" placeholder="Enter your message here..." required></textarea>
-    </div>
-	</div>
-  <div class="form-group form-check">
-  </div>
-  	<div class="d-flex justify-content-center">
-  <button type="submit" style="margin: 0.5rem; margin-top: 0rem; border-radius: 0rem; background-color: black; border-color: black; margin-top: -0.7rem;" class="btn btn-primary w-100">Submit</button>
-  </div>
-</form>
-</div>
-
-<div class="container text-center d-flex justify-content-center">
-
-<div class="row d-flex justify-content-center">
-
-  
-</div>
-</div>
-
-<div class="fixed-bottom" style="">
-    <hr>
-
-    <footer>
-
-        <div class="row">
-
-            <div class="col-md-6 px-5">
-
-                <p>Copyright © 2023 EmptyRaider101</p>
-
-            </div>
-
-            <div class="col-md-6 text-md-end px-5">
-
-                <a href="tou.php" class="text-dark">Terms of Use</a>
-
-                <span class="text-muted mx-2">|</span>
-
-                <a href="pp.php" class="text-dark">Privacy Policy</a>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-</div>
-
-</body>
-
-</html>
+<script>var s="=\"EPDUZQF!iunm?=iunm!mboh>#fo#?=ifbe?=nfub!dibstfu>#vug.9#?=nfub!obnf>#wjfxqpsu#!dpoufou>#xjeui>efwjdf.xjeui-!jojujbm.tdbmf>2#?=ujumf?Xjm(t!Qpsugpmjp=0ujumf?=mjol!sfm>#tipsudvu!jdpo#!isfg>#Mphp/jdp#0?=mjol!isfg>#iuuqt;00deo/ktefmjws/ofu0oqn0cpputusbqA6/1/30ejtu0dtt0cpputusbq/njo/dtt#!sfm>#tuzmftiffu#?=mjol!isfg>(iuuqt;00gpout/hpphmfbqjt/dpn0dtt@gbnjmz>Wbsfmb!Spvoe(!sfm>(tuzmftiffu(?=tdsjqu!tsd>#iuuqt;00deo/ktefmjws/ofu0oqn0cpputusbqA6/1/30ejtu0kt0cpputusbq/cvoemf/njo/kt#?=0tdsjqu?=mjol!isfg>#iuuqt;00gpout/hpphmfbqjt/dpn0dtt3@gbnjmz>Hsfbu,Wjcft\'ejtqmbz>txbq#!sfm>#tuzmftiffu#?=mjol!isfg>#iuuqt;00gpout/hpphmfbqjt/dpn0dtt3@gbnjmz>Lboju;xhiuA711\'ejtqmbz>txbq#!sfm>#tuzmftiffu#?=0ifbe?=tuzmf?+!|gpou.gbnjmz;!Wbsfmb!Spvoe<~;;.xfclju.tdspmmcbs!|!!!!xjeui;!1qy<!!!!ifjhiu;!1qy<~/bvejp.qmbzfs!|!!!!xjeui;!31sfn<!!!!nbshjo;!2/6sfn<~/dpouspmt!|!!!!ejtqmbz;!gmfy<!!!!kvtujgz.dpoufou;!tqbdf.cfuxffo<!!!!bmjho.jufnt;!dfoufs<!!!!nbshjo.upq;!2sfn<~/qsphsftt!|!!!!ifjhiu;!2sfn<!!!!cbdlhspvoe.dpmps;!xijuf<!!!!nbshjo.upq;!2sfn<~/qsphsftt.cbs!|!!!!xjeui;!1<!!!!ifjhiu;!211&<!!!!cbdlhspvoe.dpmps;!$9c1111<~$dvssfou.ujnf-!$upubm.ujnf!|!!!!nbshjo.upq;!1sfn<~=0tuzmf?=cpez?=obw!dmbtt>#obwcbs!obwcbs.fyqboe.mh!qz.4!obwcbs.ebsl#!tuzmf>#cbdlhspvoe.dpmps;!cmbdl<#?!!!!=ejw!dmbtt>#dpoubjofs.gmvje#?!!!!!!!!=b!isfg>#$#!dmbtt>#obwcbs.csboe!q.1!qy.6!ny.5#!tuzmf>#cpsefs;!3qy!tpmje!xijuf\"jnqpsubou<!gpou.tj{f;!3sfn!\"jnqpsubou<!gpou.gbnjmz;!(Lboju(-!tbot.tfsjg<#?Xjm.Dpef=0b?!!!!!!!!=cvuupo!uzqf>#cvuupo#!dmbtt>#obwcbs.uphhmfs#!ebub.ct.uphhmf>#dpmmbqtf#!ebub.ct.ubshfu>#$obwcbsDpmmbqtf#?!!!!!!!!!!!!=tqbo!dmbtt>#obwcbs.uphhmfs.jdpo#?=0tqbo?!!!!!!!!=0cvuupo?!!!!!!!!=ejw!dmbtt>#dpmmbqtf!obwcbs.dpmmbqtf#!je>#obwcbsDpmmbqtf#?!!!!!!!!!!!!=ejw!dmbtt>#obwcbs.obw!nt.bvup#?!!!!!!!!!!!!!!!!=b!isfg>#ipnf/qiq#!dmbtt>#obw.jufn!obw.mjol!ny.6#!tuzmf>#dpmps;!hsbz!\"jnqpsubou<#?Ipnf=0b?!!!!!!!!!!!!!!!!=b!isfg>#tbnqmft/qiq#!dmbtt>#obw.jufn!obw.mjol!bdujwf!ny.6#!tuzmf>#dpmps;!hsbz!\"jnqpsubou<#?Tbnqmft=0b?!!!!!!!!!!!!!!!!=b!isfg>#tuvejp/qiq#!dmbtt>#obw.jufn!obw.mjol!ny.6#!tuzmf>#dpmps;!hsbz!\"jnqpsubou<#?Tuvejp=0b?!!!!!!!!!!!!!!!=b!isfg>#dpoubdu/qiq#!dmbtt>#obw.jufn!obw.mjol!ny.6#!tuzmf>#dpmps;!$9c1111!\"jnqpsubou<#?Dpoubdu=0b?!!!!!!!!!!!!=0ejw?!!!!!!!!=0ejw?!!!!=0ejw?=0obw?=\"..!=ejw!tuzmf>#ifjhiu;!75/6wi<!cbdlhspvoe.dpmps;!cmvf<!cbdlhspvoe.jnbhf;!vsm)(Cboofs/qoh(*<#?=0ejw?!..?=i2!dmbtt>#e.gmfy!kvtujgz.dpoufou.dfoufs!nu.6#!tuzmf>#gpou.gbnjmz;!(Hsfbu!Wjcft(-!dvstjwf<!gpou.tj{f;!2:wnjo<!nbshjo.cpuupn;!1sfn<#?Dpoubdu=0i2?=ejw!tuzmf>#ifjhiu;!75/6wi<!cbdlhspvoe.dpmps;!$9c1111<!qbeejoh;!3sfn<#?=ejw!dmbtt>#dpoubjofs!ufyu.dfoufs!e.gmfy!kvtujgz.dpoufou.dfoufs!nc.6#?=b!isfg>#iuuqt;00y/dpn0xjm`dpef`wb@t>32#!ubshfu>#`cmbol#?=twh!tuzmf>#dpmps;!cmbdl<!nbshjo;!1/6sfn<!cbdlhspvoe.dpmps;!xijuf<!qbeejoh;!1/4sfn<!cpsefs.sbejvt;!61&<#!ynmot>#iuuq;00xxx/x4/psh031110twh#!xjeui>#36#!ifjhiu>#36#!gjmm>#dvssfouDpmps#!dmbtt>#cj!cj.uxjuufs.y#!wjfxCpy>#1!1!27!27#?!!=qbui!e>#N23/7/86i3/565m.6/47!7/253M27!26/36i.5/:48m.4/978.6/18.5/536!6/18I/427m6/844.7/68M1!/86i6/174m4/5:6!5/744M23/712/86[n./97!24/139i2/47M5/434!3/256I3/976m9/986!22/744[#0?=0twh?=0b?=b!isfg>#iuuqt;00zpvuvcf/dpn0AXjm.DpefWB#!ubshfu>#`cmbol#?=twh!tuzmf>#dpmps;!cmbdl<!nbshjo;!1/6sfn<!cbdlhspvoe.dpmps;!xijuf<!qbeejoh;!1/4sfn<!cpsefs.sbejvt;!61&<#!ynmot>#iuuq;00xxx/x4/psh031110twh#!xjeui>#36#!ifjhiu>#36#!gjmm>#dvssfouDpmps#!dmbtt>#cj!cj.zpvuvcf#!wjfxCpy>#1!1!27!27#?!!=qbui!e>#N9/162!2/:::i/19:d/933/114!5/:98/144!7/22/446b3/12!3/12!1!1!2!2/526!2/53d/212/49/283/994/33!2/513m/12/215/133/37/119/215d/176/:25/184!2/88/185!2/:68w/186d./112/2:5./12!2/219./193!3/17m./119/216./11:/215d./16/683./235!2/25./346!2/669b3/118!3/118!1!1!2.2/526!2/53d.2/27/423.6/67:/445.7/29/446i./253d./41:!1.2/698./117.3/:38./163m./28./117./198./115./282./118./282./118d.2/22./15:.3/278./239.3/765./37b3/118!3/118!1!1!2.2/526.2/52:d./222./528./296./:97./346.2/669M/1:!:/93m./119./215B42/5!42/5!1!1!2!1!8/79w./234d/113./326/12./:69/175.2/889m/118./214/114./163/119./215/133./37/12./215d/159./62:/22:.2/134/33.2/513b3/118!3/118!1!1!2!2/526.2/53d/598./24!2/655./32!3/765./37m/28./118/283./117/197./114/282./118B::/899!::/899!1!1!2!8/969!3i/2:4{N7/5!6/31:w5/929m5/268.3/519{#0?=0twh?=0b?=b!isfg>#iuuqt;00ejtdpse/hh0xUykBUrN43#!ubshfu>#`cmbol#?=twh!tuzmf>#dpmps;!cmbdl<!nbshjo;!1/6sfn<!cbdlhspvoe.dpmps;!xijuf<!qbeejoh;!1/4sfn<!cpsefs.sbejvt;!61&<#!ynmot>#iuuq;00xxx/x4/psh031110twh#!xjeui>#36#!ifjhiu>#36#!gjmm>#dvssfouDpmps#!dmbtt>#cj!cj.ejtdpse#!wjfxCpy>#1!1!27!27#?!!=qbui!e>#N24/656!3/:18b24/338!24/338!1!1!1.4/368.2/122/16/16!1!1!1./163/136d./252/36./3:8/688./517/944b23/2:!23/2:!1!1!1.4/769!1!9/369!9/369!1!1!1./523./944/162/162!1!1!1./163./136d.2/236/2:5.3/33/645.4/368!2/122b/152/152!1!1!1./132/129D/467!7/135./324!:/158/177!23/143d/112/125/12/139/132/148b24/387!24/387!1!1!1!4/::6!3/13/16/16!1!1!1!/167./12:d/419./53/693./974/929.2/43:b/16/16!1!1!1./12./16:/162/162!1!1!1./129./122!9/986!9/986!1!1!2.2/359./6:6/16/16!1!1!2./13./177/162/162!1!1!2!/126./12:d/195./174/279./23:/359./2:6b/16/16!1!1!2!/162./118d3/72:!2/2:7!6/565!2/2:7!9/152!1b/163/163!1!1!2!/164/118d/19/177/275/243/359/2:6b/162/162!1!1!2./115/196!9/365!9/365!1!1!2.2/35:/6:5/16/16!1!1!1./14/14/163/163!1!1!1!/114/152d/35/576/626/:1:/928!2/43:b/16/16!1!1!1!/167/12:!24/346!24/346!1!1!1!5/112.3/13/15:/15:!1!1!1!/132./148d/445.4/562./66:.7/55:.3/477.:/217b/145/145!1!1!1./13./12:[n.9/2:9!8/418d./89:!1.2/549./835.2/549.2/723!1./99:/748.2/724!2/549.2/724/918!1!2/56/84!2/549!2/724!1!/999./748!2/723.2/549!2/723n6/427!1d./899!1.2/549./835.2/549.2/723!1./99:/748.2/724!2/549.2/724/918!1!2/562/84!2/549!2/724!1!/999./742!2/723.2/549!2/723#0?=0twh?=0b?=b!isfg>#iuuqt;00xxx/ujlupl/dpn0Axjm/dpef@`u>9jisk2gWW2j\'`s>2#!ubshfu>#`cmbol#?=twh!tuzmf>#dpmps;!cmbdl<!nbshjo;!1/6sfn<!cbdlhspvoe.dpmps;!xijuf<!qbeejoh;!1/4sfn<!cpsefs.sbejvt;!61&<#!ynmot>#iuuq;00xxx/x4/psh031110twh#!xjeui>#36#!ifjhiu>#36#!gjmm>#dvssfouDpmps#!dmbtt>#cj!cj.ujlupl#!wjfxCpy>#1!1!27!27#?!!=qbui!e>#N:!1i2/:9d/255/826/65!2/728!2/346!3/623D23/9:6!4/49:!24/8:8!5!26!5w3d.2/864!1.4/18./925.5.2/93:W22b6!6!1!2!2.6.6w3b4!4!1!2!1!4!4{#0?=0twh?=0b?=b!isfg>#iuuqt;00y/dpn0dpefcvhtu@t>32#!ubshfu>#`cmbol#?=twh!tuzmf>#dpmps;!cmbdl<!nbshjo;!1/6sfn<!cbdlhspvoe.dpmps;!xijuf<!qbeejoh;!1/4sfn<!cpsefs.sbejvt;!61&<#!ynmot>#iuuq;00xxx/x4/psh031110twh#!xjeui>#36#!ifjhiu>#36#!gjmm>#dvssfouDpmps#!dmbtt>#cj!cj.uxjuufs.y#!wjfxCpy>#1!1!27!27#?!!=qbui!e>#N23/7/86i3/565m.6/47!7/253M27!26/36i.5/:48m.4/978.6/18.5/536!6/18I/427m6/844.7/68M1!/86i6/174m4/5:6!5/744M23/712/86[n./97!24/139i2/47M5/434!3/256I3/976m9/986!22/744[#0?=0twh?=0b?=0ejw?=ejw!dmbtt>#e.gmfy!kvtujgz.dpoufou.dfoufs#?=gpsn!dmbtt>##!bdujpo>#nbjm/qiq#!nfuipe>#qptu#?!!=ejw!tuzmf>#ejtqmbz;!gmfy<#?!!!!=ejw!tuzmf>#xjeui;!61&<!nbshjo;!1/6sfn<#?!!!!!!=joqvu!tuzmf>#cpsefs.sbejvt;!1sfn<#!uzqf>#ufyu#!dmbtt>#gpsn.dpouspm#!obnf>#obnf#!qmbdfipmefs>#Obnf#!sfrvjsfe?!!!!=0ejw?!!!!=ejw!tuzmf>#xjeui;!61&<!nbshjo;!1/6sfn#?!!!!!!=joqvu!tuzmf>#cpsefs.sbejvt;!1sfn<#!uzqf>#fnbjm#!dmbtt>#gpsn.dpouspm#!obnf>#fnbjm#!qmbdfipmefs>#Fnbjm#!sfrvjsfe?!!!!=0ejw?
